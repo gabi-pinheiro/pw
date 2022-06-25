@@ -1,0 +1,35 @@
+drop DATABASE crud;
+create database crud;
+USE crud2;
+
+CREATE TABLE tbusuario (
+ idusuario INT primary key NOT NULL AUTO_INCREMENT,
+ usuario VARCHAR(50) NOT NULL , 
+ senha VARCHAR(50) NOT NULL 
+);
+
+create table tbproduto(
+ idproduto int primary key auto_increment,
+ produto varchar(100), 
+ idCategoria int,
+ valor float
+);
+
+create table tbcategoria(
+  idCategoria int primary key auto_increment,
+  categoria varchar(100)
+);
+
+ insert into tbcategoria values ('', 1);
+ insert into tbcategoria values ('', 2);
+
+
+ insert into tbproduto values ('', 'presunto', 1, '1');
+ insert into tbproduto values ('', 'samambaia', 2, '34');
+ insert into tbproduto values ('', 'pão', 1, '1');
+ insert into tbproduto values ('', 'misto quente', 1, '7');
+
+
+-DEPOIS COLOCA:-
+
+alter table tbproduto add foreign key (idCategoria) references tbcategoria(idCategoria);

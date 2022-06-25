@@ -1,0 +1,209 @@
+/* tela de cadastro e login*/
+body, html{
+    font-family: sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.background{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-135deg,#506cc8,#41d0b8);
+}
+
+#form-wrap{
+    width: 30%;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-input{
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1;
+    color: rgb(53, 47, 47);
+    display: block;
+    width: 100%;
+    background: #faf4f4;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 10px;
+    border: none;
+}
+
+::placeholder{
+    text-indent: 10%;
+}
+
+.form-submit{
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #46b8af;
+    border: none;
+    transition: background-color 1s;
+}
+
+.form-submit :hover{
+    background-color: rgb(62, 158, 158);
+}
+
+a{
+    color: #46b8af;
+}
+
+/* menu */ 
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #46b8af;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding-left: 1rem;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+#sair{
+    float: right;
+    color: #65666b;
+}
+
+/* dashboard */
+
+.graphbox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.graphbox .box{
+    position: relative;
+    background:white;
+    width: 100%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+/* tabelas */
+
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 50%;
+    margin-left: auto;
+    margin-right: auto;    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead tr{
+    background-color: #46b8af;
+    color: #ffffff;
+    text-align: left;
+}
+
+.table th, td{
+    padding: 12px 15px;
+}
+
+.table tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type{
+    border-bottom: 2px solid #46b8af;
+}
+
+.table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+/* form salvar categoria ou produto */
+
+.form-salvar input {
+    border-radius: 20px;
+    border-color: #46b8af;
+    height: 3em;
+}
+
+/*cards*/
+
+
+.wrapper{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards thead{
+    display: none;
+}
+
+.cards{
+    background: none;
+    border: none;
+}
+
+.cards tr{
+    display: inline-block;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    margin: 1.5rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: white;
+}
+
+.cards td{
+    display: block;
+}
+
+#titulo{
+    text-align: center;
+}
+
+#subtitulo{
+    color: rgb(86 80 80 / 69%);
+}
+
+
